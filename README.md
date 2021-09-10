@@ -8,11 +8,7 @@
 
 This app is targeted for understanding how it is easy to execute your own FlowStream and get a response. This predefined FlowStream transforms only string to upper case.
 
-__Requirements__:
-
-- Total.js 4 - `$ npm install total4`
-
-__Example__:
+__How to run it?__
 
 ```bash
 $ cd flowstreamexec
