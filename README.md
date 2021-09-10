@@ -24,7 +24,11 @@ $ node index.js
 
 Download [TMS Integrator app](https://github.com/totaljs/tms), and copy file `/flowstream/database.json` from this project to the `tms` app into the `/flowstream/` directory. Then run the __TMS app__ (please follow the app's readme file due to install instructions).
 
-If you edit a design of your FlowStream in TMS app, then copy `tms/flowstream/database.json` to the `flowstreamexec` app into the `/flowstream/`.
+If you edit a design of your FlowStream in the TMS app, then copy `tms/flowstream/database.json` to the `flowstreamexec` app into the `/flowstream/`.
+
+__Can I use original FlowStream app?__
+
+Of course, the __TMS app__ is similar to the __FlowStream app__, but it supports only one providing of FlowStream with better integrity with Total.js Message Service. But this app uses the same designer and exact mechanism as the FlowStream app.
 
 ## Good to know
 
