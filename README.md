@@ -12,8 +12,8 @@ __How to run it?__
 
 ```bash
 $ cd flowstreamexec
-$ npm install total4
-$ node index.js
+$ npm install
+$ npm start
 ```
 
 - open web browser `http:/127.0.0.1:8000`
