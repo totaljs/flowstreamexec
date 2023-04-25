@@ -1,8 +1,7 @@
 # FlowStream Execution
 
-- [Website](https://www.totaljs.com/flowstream/)
+- [Website](https://www.totaljs.com/flow/)
 - [__Documentation__](https://docs.totaljs.com/total4/5aed1001bj51c/)
-- [Chat support](https://platform.totaljs.com/?open=messenger)
 - [Join __Total.js Telegram__](https://t.me/totalplatform)
 - [Support](https://www.totaljs.com/support/)
 
@@ -22,13 +21,9 @@ $ npm start
 
 ## How to edit FlowStream?
 
-Download [TMS Integrator app](https://github.com/totaljs/tms), and copy file `/flowstream/database.json` from this project to the `tms` app into the `/flowstream/` directory. Then run the __TMS app__ (please follow the app's readme file due to install instructions).
+Download [Flow](https://github.com/totaljs/flow), and copy file `/flowstream/database.json` from this project to the `flow` app into the `/flowstream/` directory. Then run the __Flow app__ (please follow the app's readme file due to install instructions).
 
-If you edit a design of your FlowStream in the TMS app, then copy `tms/flowstream/database.json` to the `flowstreamexec` app into the `/flowstream/`.
-
-__Can I use original FlowStream app?__
-
-Of course, the __TMS app__ is similar to the __FlowStream app__, but it supports only one providing of FlowStream with better integrity with Total.js Message Service. But this app uses the same designer and exact mechanism as the FlowStream app.
+If you edit a design of your FlowStream in the Flow app, then copy `flow/flowstream/database.json` to the `flowstreamexec` app into the `/flowstream/`.
 
 ## Good to know
 
