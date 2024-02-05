@@ -5,7 +5,7 @@
 - [Join __Total.js Telegram__](https://t.me/totalplatform)
 - [Support](https://www.totaljs.com/support/)
 
-This app is targeted for understanding how it is easy to execute your own FlowStream and get a response. This predefined FlowStream transforms only string to upper case.
+This app is targeted at understanding how easy it is to execute your own FlowStream and get a response. This predefined FlowStream transforms only strings to uppercase.
 
 __How to run it?__
 
@@ -21,10 +21,8 @@ $ npm start
 
 ## How to edit FlowStream?
 
-Download [Flow](https://github.com/totaljs/flow), and copy file `/flowstream/database.json` from this project to the `flow` app into the `/flowstream/` directory. Then run the __Flow app__ (please follow the app's readme file due to install instructions).
-
-If you edit a design of your FlowStream in the Flow app, then copy `flow/flowstream/database.json` to the `flowstreamexec` app into the `/flowstream/`.
+Drag and drop the file `/flowstream/database.json` to https://floweditor.totaljs.com.
 
 ## Good to know
 
-FlowStream must contain the [Exec component](https://github.com/totaljs/flowstreamcomponents/blob/main/components/exec.html), and this component inits a message that you generate manually in the code. The Exec component returns message data only if the generated message ends, so therefore we used the [End component](https://github.com/totaljs/flowstreamcomponents/blob/main/components/end.html) to complete the FlowStream process.
+FlowStream must contain the [Exec component](https://github.com/totaljs/flowstreamcomponents/blob/main/components/exec.html), and this component initializes a message that you generate manually in the code. The Exec component returns message data only if the generated message ends, so therefore we used the [End component](https://github.com/totaljs/flowstreamcomponents/blob/main/components/end.html) to complete the FlowStream process.

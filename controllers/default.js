@@ -13,13 +13,20 @@ function runflowstream($) {
 
 		// Database can contain multiple FlowStreams
 		var flowstreams = buffer.toString('utf8').parseJSON(true);
+		var flowstream = null;
 
-		// Obtains all unique identifiers of all stored FlowStreams
-		var uids = Object.keys(flowstreams);
+		// Check if the file contains multiple FlowStreams
+		if (!flowstreams.design && !flowstreams.components) {
 
-		// And finally, we read first Flow
-		var flowstream = flowstreams[uids[0]];
+			// Obtain all unique identifiers of all stored FlowStreams
+			let uids = Object.keys(flowstreams);
 
+			// And finally, we read first Flow
+			flowstream = flowstreams[uids[0]];
+		} else
+			flowstream = flowstreams;
+
+		// Overwrite the identifier because you can't provide multiple FlowStream instances with the same identifier
 		flowstream.id = 'flow_' + UID();
 
 		FUNC.exec(flowstream, ($.query.data || $.query.DATA) || 'send data via query ?data=your_data', function(err, output) {
