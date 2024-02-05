@@ -1,12 +1,10 @@
-const Fs = require('fs');
-
 exports.install = function() {
 	ROUTE('GET /', runflowstream);
 };
 
-function runflowstream() {
-	var $ = this;
-	Fs.readFile(PATH.root('flowstream/database.json'), function(err, buffer) {
+function runflowstream($) {
+
+	F.Fs.readFile(PATH.root('flowstream/database.json'), function(err, buffer) {
 
 		if (err) {
 			$.invalid(err);
@@ -21,6 +19,8 @@ function runflowstream() {
 
 		// And finally, we read first Flow
 		var flowstream = flowstreams[uids[0]];
+
+		flowstream.id = 'flow_' + UID();
 
 		FUNC.exec(flowstream, ($.query.data || $.query.DATA) || 'send data via query ?data=your_data', function(err, output) {
 			if (err)

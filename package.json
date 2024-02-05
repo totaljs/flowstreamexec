@@ -1,10 +1,10 @@
 {
   "name": "flowstreamexec",
   "description": "Total.js FlowStream Execution",
-  "version": "9.0.0",
+  "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
-    "total4": "latest"
+    "total5": "beta"
   },
   "scripts": {
     "start": "node index.js 8000"
